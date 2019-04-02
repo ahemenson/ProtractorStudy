@@ -1,0 +1,70 @@
+[
+  {
+    "keyword": "Funcionalidade",
+    "name": "Busca de pokémons",
+    "line": 4,
+    "id": "busca-de-pokémons",
+    "tags": [
+      {
+        "name": "@Test",
+        "line": 3
+      }
+    ],
+    "uri": "src/features/buscaPokemon.feature",
+    "elements": [
+      {
+        "id": "busca-de-pokémons;pesquisa-de-pelo-nome-do-pokémon",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Pesquisa de pelo nome do pokémon",
+        "tags": [
+          {
+            "name": "@Test",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Dado ",
+            "line": 6,
+            "name": "que eu estou na tela de listagem de pokémons",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Quando ",
+            "line": 7,
+            "name": "eu digito \"flyi\" no campo de pesquisa",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 8,
+            "name": "devo visualizar três pokémons no resultado",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "../node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

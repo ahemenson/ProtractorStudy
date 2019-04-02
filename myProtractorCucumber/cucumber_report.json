@@ -10,7 +10,7 @@
         "line": 3
       }
     ],
-    "uri": "src/features/buscaPokemon.feature",
+    "uri": "e2e/src/features/buscaPokemon.feature",
     "elements": [
       {
         "id": "busca-de-notícias-no-g1;pesquisa-de-pelo-carro-tesla",
@@ -31,7 +31,7 @@
             "line": 6,
             "name": "que eu estou na tela de notícias de tecnologia",
             "match": {
-              "location": "src/steps/g1.step.ts:12"
+              "location": "e2e/src/steps/g1.step.ts:13"
             },
             "result": {
               "status": "passed",
@@ -44,18 +44,18 @@
             "line": 7,
             "name": "eu digito \"Tesla\" no campo de pesquisa",
             "match": {
-              "location": "src/steps/g1.step.ts:16"
+              "location": "e2e/src/steps/g1.step.ts:17"
             },
             "result": {
               "status": "passed",
-              "duration": 5000000
+              "duration": 7145000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "../node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
+              "location": "node_modules/protractor-cucumber-framework/lib/resultsCapturer.js:26"
             },
             "result": {
               "status": "passed",

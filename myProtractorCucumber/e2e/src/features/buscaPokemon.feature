@@ -1,8 +1,8 @@
 # language: pt
 
 @Test
-Funcionalidade: Busca de pokémons
-Cenário: Pesquisa de pelo nome do pokémon
-Dado que eu estou na tela de listagem de pokémons
-Quando eu digito "flyi" no campo de pesquisa
-Então devo visualizar três pokémons no resultado
+Funcionalidade: Busca de notícias no G1
+Cenário: Pesquisa de pelo carro Tesla
+Dado que eu estou na tela de notícias de tecnologia
+Quando eu digito "Tesla" no campo de pesquisa
+# Então devo visualizar três pokémons no resultado

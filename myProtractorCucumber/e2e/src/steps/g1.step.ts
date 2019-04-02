@@ -4,6 +4,7 @@ import { Given, When, Then } from 'cucumber';
 import * as chai from 'chai';
 import * as chaiAsPromised from 'chai-as-promised';
 import { Driver } from 'selenium-webdriver/chrome';
+import { KeyEventsPlugin } from '@angular/platform-browser/src/dom/events/key_events';
 
 const expect = chai.use(chaiAsPromised).expect;
 const g1Page: G1Page = new G1Page();
@@ -14,18 +15,14 @@ Given(/^que eu estou na tela de notícias de tecnologia$/, async () => {
     await g1Page.visit();
 });
 
-When(/^eu digito "([^"]*)" no campo de pesquisa$/, {timeout: 2 * 5000}, async (valor) => {
-   // await browser.wait(ExpectedConditions.visibilityOf(g1Page.search()), 1000).then(async () => {
-        await g1Page.search().sendKeys(valor);
-        browser.actions().sendKeys(protractor.Key.ENTER).perform();
-        
-   // });
+When(/^eu digito "([^"]*)" no campo de pesquisa$/, async (valor) => {
+    await browser.wait(ExpectedConditions.visibilityOf(g1Page.search()), 5000).then(async () => {
+        await g1Page.search().sendKeys(valor + protractor.Key.ENTER);
+    });
 });
 
-
-// When(/^Fill Product Name with "([^"]*)"$/, async (productName) => {
-//     await browser.wait(ExpectedConditions.visibilityOf(productPage.getProductName()), 1000).then(async () => {
-//         await productPage.fillProductName(productName);
-//     });
-// });
+Then('devo visualizar o título no resultado', async function () {
+    // Write code here that turns the phrase above into concrete actions
+    expect(await g1Page.getTitle()).to.equal('Invalid credentials!');
+  });
 

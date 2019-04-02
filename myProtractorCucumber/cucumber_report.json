@@ -31,7 +31,7 @@
             "line": 6,
             "name": "que eu estou na tela de notícias de tecnologia",
             "match": {
-              "location": "e2e/src/steps/g1.step.ts:13"
+              "location": "e2e/src/steps/g1.step.ts:14"
             },
             "result": {
               "status": "passed",
@@ -44,11 +44,21 @@
             "line": 7,
             "name": "eu digito \"Tesla\" no campo de pesquisa",
             "match": {
-              "location": "e2e/src/steps/g1.step.ts:17"
+              "location": "e2e/src/steps/g1.step.ts:18"
             },
             "result": {
-              "status": "passed",
-              "duration": 7145000000
+              "status": "failed",
+              "duration": 5008000000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout._time.default.setTimeout [as _onTimeout] (/home/ahemenson/Documentos/Study/ProtractorStudy/myProtractorCucumber/node_modules/cucumber/lib/user_code_runner.js:81:20)\n    at ontimeout (timers.js:436:11)\n    at tryOnTimeout (timers.js:300:5)\n    at listOnTimeout (timers.js:263:5)\n    at Timer.processTimers (timers.js:223:10)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Então ",
+            "line": 8,
+            "name": "devo visualizar o título no resultado",
+            "result": {
+              "status": "undefined"
             }
           },
           {
